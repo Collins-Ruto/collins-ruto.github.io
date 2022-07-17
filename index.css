@@ -634,7 +634,7 @@ input[type="checkbox"]:checked + #checkbox-lable {
   /* page1 */
 
   .page1 {
-    background-image: url(img/34.png) !important;
+    background-image: url(img/34.webp) !important;
     background-size: cover;
   }
 }
@@ -670,7 +670,7 @@ input[type="checkbox"]:checked + #checkbox-lable {
 
 .my-services {
   background-color: var(--clr-dark);
-  background-image: url(img/16.jpeg);
+  /* background-image: url(img/16.jpeg); */
   background-size: cover;
   background-blend-mode: multiply;
   color: var(--clr-accent);
