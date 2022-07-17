@@ -4,7 +4,10 @@ let boddy = document.querySelector(".bodyy");
 let contactBtn = document.querySelector(".butn1");
 let closer = document.querySelector(".close");
 let contact = document.getElementById("contact")
-
+let portDesc = document.querySelector(".port-desc");
+let portImg = document.querySelector(".portfolio__item");
+let pdesc = document.getElementById("pdesc");
+let portfolio = document.querySelectorAll(".portfolio__item");
 
 navToggle.addEventListener("click", () => {
 	document.body.classList.toggle('nav-open');
@@ -28,19 +31,23 @@ closer.addEventListener("click", () => {
 	document.body.classList.remove("contact-open");
 });
 
-/*boddy.addEventListener("click", () => {
-	document.body.classList.remove('contact-open');
-});
+portDesc.addEventListener("mouseover", () => {
+	document.body.classList.remove("port-desc");
+	
+})
 
-/*window.addEventListener("click", () => {
-	document.body.classList.remove("contact-open")
-});
+portfolio.forEach(item => {
+	item.addEventListener("mouseover", () => {
+		let idesc = item.querySelector(".descp");
+		idesc.classList.add("desc-off");
+		console.log("got here")
+	});
+})
 
-/*navBar.addEventListener("focus", () => {
-	document.body.classList.toggle('nav-open');
-});
-
-navBar.addEventListener("blur", () => {
-	alert("it should be out right around now");
-	document.body.classList.remove('nav-open');
-});*/
+portfolio.forEach(item => {
+	item.addEventListener("mouseout", () => {
+		pdesc.classList.remove("desc-off");
+		let idesc = item.querySelector(".descp");
+    	idesc.classList.remove("desc-off");
+	});
+})

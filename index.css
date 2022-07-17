@@ -902,23 +902,38 @@ input[type="checkbox"]:checked + #checkbox-lable {
   margin: -0.8em 0 0.8em 0;
 }
 .portfolio__item {
-  background: var(--clr-accent);
   overflow: hidden;
+  background-color: #171820;
+  text-decoration: none;
 }
 
 .portfolio__img {
   transition: transform 750ms cubic-bezier(0.5, 0, 0.5, 1), opacity 250ms linear;
+  background: var(--clr-accent);
+  opacity: 0.35;
 }
 
+.portfolio__item .port-desc {
+  position: relative;
+  bottom: 60%;
+  font-size: 2.3rem;
+  max-width: 16rem;
+  margin: 0 auto;
+  color:rgb(255, 246, 229);
+  margin-bottom: -7rem;
+  opacity: 1;
+}
+
+.portfolio__item .desc-off {
+  display:none !important;
+}
 .portfolio__item:focus {
   position: relative;
-  z-index: 2;
 }
-
 .portfolio__img:hover,
 .portfolio__item:focus .portfolio__img {
-  transform: scale(1.2);
-  opacity: 0.5;
+  transform: scale(1.1);
+  opacity: 1;
 }
 
 /* footer */
