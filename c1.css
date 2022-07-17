@@ -1,0 +1,49 @@
+body {
+	background: lightseagreen !important;
+	height: 100% !important;
+	
+}
+
+.contact-con {
+	width: 100%;
+	z-index: 1;
+	position: absolute;
+}
+
+.contact-card {
+	margin-top:4%;
+	display: flex;
+	flex-direction: column;
+}
+
+.container {
+	position: ;
+	padding: 1em;
+	box-shadow:0 1rem 3rem rgba(0,0,0,.475) !important; 
+	border-radius: 1em;
+	background: lightgray;
+	z-index: 2;
+}
+
+.row {
+	
+}
+
+@media (max-width: 600px) {
+	body {
+		background: lightseagreen !important
+	}
+	
+	.contact-con {
+	}
+	
+	.contact-car {
+		margin-top: 0;
+		margin-bottom : 5em;
+	}
+	
+	.container {
+		max-width: 85%;
+	}
+	
+}
