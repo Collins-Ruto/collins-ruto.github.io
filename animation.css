@@ -1,0 +1,160 @@
+@keyframes updown {
+  0% {
+    transform: translate3d(0px, 0px, 0px);
+  }
+  100% {
+    transform: translate3d(0px, -20px, 0px);
+  }
+}
+
+@keyframes donut {
+  0% {
+    transform: translate3d(0px, 0px, 0px);
+  }
+  100% {
+    transform: translate3d(0px, -20px, 0px);
+  }
+}
+/* first half circle parent */
+@media (min-width: 600px) {
+  .firsthc-p {
+    position: absolute;
+    height: 150px;
+    width: 150px;
+    top: 50px;
+    left: -45px;
+    z-index: 1;
+  }
+  /* first half circle child */
+  .firsthc-i {
+    position: inherit;
+    height: inherit;
+    width: inherit;
+    background: linear-gradient(225deg, rgb(254, 215, 170), rgb(251, 146, 60));
+    border-radius: 50%;
+    inset: inherit;
+    z-index: inherit;
+  }
+
+  .css-gdh4sq {
+    position: absolute;
+    height: 35px;
+    width: 35px;
+    top: 80px;
+    left: 40px;
+    z-index: -1;
+  }
+
+  .css-fbgv8y {
+    position: inherit;
+    height: inherit;
+    width: inherit;
+    background: linear-gradient(45deg, rgb(199, 210, 254), rgb(129, 140, 248));
+    border-radius: 50%;
+    inset: inherit;
+    z-index: inherit;
+  }
+
+  .css-1mas8wp {
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    top: 300px;
+    left: -20px;
+    z-index: 1;
+  }
+
+  .css-16q2msq {
+    position: inherit;
+    height: inherit;
+    width: inherit;
+    background-color: transparent;
+    border: 20px solid rgb(192, 132, 252);
+    border-radius: 50%;
+    top: inherit;
+    left: inherit;
+    right: inherit;
+    z-index: inherit;
+  }
+  /* dotted square parent */
+  .css-1neiwto {
+    position: absolute;
+    height: 175px;
+    width: 175px;
+    top: 50px;
+    right: 5px;
+    z-index: 1;
+  }
+  /* Dotted square child */
+  .css-e7usg8 {
+    position: inherit;
+    height: inherit;
+    width: inherit;
+    inset: inherit;
+    z-index: inherit;
+  }
+
+  /* Diamond square parent */
+  .css-avj60l {
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    top: 150px;
+    right: 30px;
+    z-index: 1;
+    animation: 6s ease-in-out 0s infinite alternate none running updown;
+  }
+  /* Diamond square child */
+  .css-9sw2ye {
+    position: inherit;
+    height: inherit;
+    width: inherit;
+    background: linear-gradient(225deg, rgb(254, 215, 170), rgb(251, 146, 60));
+    inset: inherit;
+    transform: rotate(45deg);
+    z-index: inherit;
+  }
+
+  .css-aacoj7 {
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    top: 260px;
+    left: 5px;
+    z-index: 1;
+    animation: 6s ease-in-out 0s infinite alternate none running donut;
+  }
+
+  .css-1e849ec {
+    position: inherit;
+    height: inherit;
+    width: inherit;
+    background-color: transparent;
+    border: 10px solid rgb(74, 222, 128);
+    border-radius: 50%;
+    top: inherit;
+    left: inherit;
+    right: inherit;
+    z-index: inherit;
+    animation: 6s ease-in-out 0s infinite alternate none running donut;
+  }
+
+  .css-pdwyd0 {
+    position: absolute;
+    height: 150px;
+    width: 150px;
+    bottom: 10px;
+    right: 10px;
+    z-index: 1;
+  }
+
+  .css-cwfmwg {
+    position: inherit;
+    height: inherit;
+    width: inherit;
+    background: linear-gradient(75deg, rgb(125, 211, 252), rgb(14, 165, 233));
+    border-radius: 50%;
+    inset: inherit;
+    z-index: inherit;
+  }
+}

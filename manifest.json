@@ -1,0 +1,9 @@
+{
+  "name": "collins ruto",
+  "short_name": "collins",
+  "theme_color": "#fff",
+  "background_color": "#1a202c",
+  "display": "browser",
+  "scope": "/",
+  "start_url": "/"
+}
