@@ -129,7 +129,7 @@ h3 {
 }
 
 .section__title--intro strong {
-  display: block;
+  display: flex;
   font-weight: bold;
   font-size: 1.67em;
   font-family: lora, monospace;
@@ -592,7 +592,7 @@ input[type="checkbox"]:checked + #checkbox-lable {
 }
 
 .intro__img:hover {
-  transform: scale(1.1);
+  transform: scale(1.05);
   opacity: 0.95;
 }
 
@@ -612,6 +612,20 @@ input[type="checkbox"]:checked + #checkbox-lable {
     grid-template-columns: min-content max-content;
   }
 
+  .anim {
+    opacity: 0;
+
+    -webkit-transition: opacity 1s ease-in;
+       -moz-transition: opacity 1s ease-in;
+        -ms-transition: opacity 1s ease-in;
+         -o-transition: opacity 1s ease-in;
+            transition: opacity 1s ease-in;
+  }
+
+  .slow {
+    opacity: 1;
+  }
+
   .intro__img {
     grid-area: img;
     min-width: 250px;
@@ -625,6 +639,11 @@ input[type="checkbox"]:checked + #checkbox-lable {
 
   .section__title--intro strong {
     font-size: 1.67em;
+  }
+
+  .section__title--intro strong div:hover {
+    color: var(--clr-accent);
+    transform: scale(1.2);
   }
 
   .section__subtitle--intro {

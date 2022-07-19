@@ -9,6 +9,10 @@ let portImg = document.querySelector(".portfolio__item");
 let pdesc = document.getElementById("pdesc");
 let portfolio = document.querySelectorAll(".portfolio__item");
 
+document.querySelectorAll(".anim").forEach(element => {
+	element.classList.add("slow");	
+})
+
 navToggle.addEventListener("click", () => {
 	document.body.classList.toggle('nav-open');
 });
