@@ -5,4 +5,4 @@ It is currently hosted at [https://collinsruto.netlify.app](https://collinsruto.
 
 ### It looks like this:
 
-![screenshot](https://github.com/Collins-Ruto/my-portfolio/blob/main/img/Screenshot%202022-05-03%20234207.jpg?raw=true)
+![collins ruto](https://github.com/Collins-Ruto/my-portfolio/blob/main/img/Screenshot%202022-05-03%20234207.jpg?raw=true)
