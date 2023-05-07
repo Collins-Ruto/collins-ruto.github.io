@@ -626,6 +626,7 @@ input[type="checkbox"]:checked + #checkbox-lable {
       "img title"
       "img subtitle";
     grid-template-columns: min-content max-content;
+    padding-top: 0 !important;
   }
 
   .anim {
