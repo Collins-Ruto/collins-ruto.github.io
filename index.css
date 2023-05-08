@@ -299,13 +299,13 @@ header {
   .nav-toggle:hover {
     background-color: transparent;
   }
-  .logo__img{
+  .logo__img {
     width: 3.5em;
     height: 3.5em;
     margin: 0.8em;
   }
 
-  .btnn{
+  .btnn {
     padding: 0.5em 1em !important;
     font-size: 0.8em;
   }
@@ -684,9 +684,11 @@ input[type="checkbox"]:checked + #checkbox-lable {
 }
 
 @media (max-width: 600px) {
-  .intro {
+  .intro-section {
     background-image: url(img/27.webp);
     background-size: cover;
+  }
+  .intro {
     color: aquamarine;
   }
 
@@ -754,8 +756,7 @@ input[type="checkbox"]:checked + #checkbox-lable {
 
 .pro-link {
   text-decoration: underline;
-  color: #3094d7
-
+  color: #3094d7;
 }
 
 @media (min-width: 800px) {
@@ -784,7 +785,7 @@ input[type="checkbox"]:checked + #checkbox-lable {
   max-height: 0 auto;
   text-align: center;
   background-size: cover;
-  background-blend-mode:exclusion;
+  background-blend-mode: exclusion;
   margin: 0 auto;
 }
 
@@ -915,19 +916,16 @@ input[type="checkbox"]:checked + #checkbox-lable {
 
 .tool-self {
   text-align: center;
-  width: 5rem;
-  margin-left: 1.7rem;
-}
-
-.tool-selff {
-  width: 4rem;
 }
 
 .tool-name {
   text-align: center;
 }
 
-
+.tool__img {
+  width: 3.2rem;
+  height: 3.2rem
+}
 
 /* My Work */
 
@@ -939,7 +937,7 @@ input[type="checkbox"]:checked + #checkbox-lable {
 }
 
 .project-btns {
-  display: flex; 
+  display: flex;
   justify-content: space-around;
   align-items: center;
 }
@@ -953,6 +951,7 @@ input[type="checkbox"]:checked + #checkbox-lable {
   margin: -0.8em 0 0.8em 0;
 }
 .portfolio__item {
+  position: relative;
   overflow: hidden;
   background-color: #171820;
   text-decoration: none;
@@ -965,10 +964,10 @@ input[type="checkbox"]:checked + #checkbox-lable {
 }
 
 .portfolio__item .port-desc {
-  position: relative;
+  position: absolute;
   bottom: 60%;
   font-size: 2.3rem;
-  max-width: 16rem;
+  padding: 0 2rem;
   margin: 0 auto;
   color: rgb(255, 246, 229);
   margin-bottom: -7rem;
@@ -994,10 +993,10 @@ input[type="checkbox"]:checked + #checkbox-lable {
   .tool-list {
     margin: -1.4em;
   }
-  .project-btns{
+  .project-btns {
     justify-content: space-between !important;
   }
-  .lifestyle-item{
+  .lifestyle-item {
     font-size: 1rem;
     width: 100%;
   }
@@ -1009,7 +1008,7 @@ input[type="checkbox"]:checked + #checkbox-lable {
   background: rgb(3, 4, 15);
   color: #16e0bd;
   text-align: center;
-  padding: 2.5em 0;
+  padding: 3em 0;
   font-size: var(--fs-h3);
 }
 
@@ -1023,7 +1022,7 @@ input[type="checkbox"]:checked + #checkbox-lable {
 }
 
 .footer__link:hover,
-.social-list__link:hover {
+.social-list-link:hover {
   opacity: 0.7;
 }
 
@@ -1043,7 +1042,7 @@ input[type="checkbox"]:checked + #checkbox-lable {
   margin: 0 0.5em;
 }
 
-.social-list__link {
+.social-list-link {
   padding: 0.5em;
 }
 

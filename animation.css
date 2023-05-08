@@ -165,14 +165,14 @@
   }
 }
 
-.hidden > *{
+.to_hide > *{
   opacity: 0;
   transform: scale(.8);
   transition: all 2s;
 }
 
 @media (prefers-reduced-motion) {
-  .hidden {
+  .to_hide {
     transition: none;
   }
 }

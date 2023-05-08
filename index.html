@@ -49,6 +49,7 @@
 	<link rel="stylesheet" type="text/css" href="animation.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<!-- <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet"> -->
 	<!--<link href='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css' rel='stylesheet'>
     <link href='' rel='stylesheet'>-->
 </head>
@@ -129,7 +130,8 @@
 
 	</header>
 	<!-- Introduction -->
-	<section class="intro bodyy " id="home" >
+	<section class="intro-section" id="home" >
+		<div class="intro bodyy ">
 		<h1 class="section__title section__title--intro anim" style="transition-delay: 100ms;">
 			Hello, I am <strong style="transition-delay: 200ms;">
 			<div>C</div><div>o</div><div>l</div><div>l</div><div>i</div><div>n</div><div style="margin-right: 1rem;">s </div><div>R</div>
@@ -138,9 +140,8 @@
 		<div class="section__subtitle section__subtitle--intro subtitle-info anim" style="transition-delay: 300ms;"> Full-Stack Developer</div>
 		<img src="img/26.webp" alt="collins ruto" id="prof" class="intro__img">
 		<img src="img/43.webp" alt="Collins Ruto" class="intro__img1">
-		<div style="display:flex">
-		<div class="butn1 anim" id="butn1"><a href="#0" class="btn1">Get Started</a></div>
-		</div>
+	</div>
+	<div class="butn1 anim" id="butn1"><a href="./collinsruto.pdf" class="btn1">Download Resume</a></div>
 	</section>
 	<div class="bgs">
 		<div class="firsthc-p"><div class="firsthc-i"></div></div>
@@ -158,7 +159,7 @@
 
 	<!-- My Services-->
 	
-	<section class="my-services bodyy hidden" id="services">	
+	<section class="my-services bodyy to_hide" id="services">	
 		<h2 class="section__title section__title--services" style="transition-delay: 300ms;">What I do</h2>
 		<div class="services">
 			<div class="service">
@@ -180,7 +181,7 @@
 	</section>
 
 	<!-- About Me -->
-	<section class="about--me bodyy hidden" id="about">
+	<section class="about--me bodyy to_hide" id="about">
 	<div class="about-me">
 		<h2 class="section__title section__title--about">Who Am I</h2>
 		
@@ -195,7 +196,7 @@
 		<img src="img/25.webp" alt="collins" class="about-me__img">
 	</div>
 	</section>
-	<section class="lifestyle bodyy hidden" id="lifestyle">
+	<section class="lifestyle bodyy to_hide" id="lifestyle">
 		<div class="life-style">
 			<h2 class="section__title section__title--life-style">Lifestyle</h2>
 			<div class="lifestyle-item">
@@ -206,7 +207,7 @@
 		    </div>
 		</div>
 	</section>
-	<section class="tools bodyy hidden" id="tools">
+	<section class="tools bodyy to_hide" id="tools">
 		<div class="toolss">
 			<h2 class="section__title section__title--tools">My Tools</h2>
 			<div class="toolbox-wrapper">
@@ -232,7 +233,7 @@
 						    	<span class="tool-name">JavaScript</span>
 						    </li>
 						    <li class="tool-list-item">
-						    	<div class="tool-selff">
+						    	<div class="tool-self">
 						    		<img src="svg/php.png" alt="php icon" class="tool__img"> 
 						    	</div>
 						    	<span class="tool-name">PHP</span>
@@ -311,11 +312,17 @@
 	</section>
 
 	<!-- My Work -->
-	<section class="my-work bodyy hidden" id="work">
+	<section class="my-work bodyy to_hide" id="work">
 		<h2 class="section__title section__title--work">My Work</h2>
 		<p class="section__subtitle"></p>
 
 		<div class="portfolio">
+			<!-- portfolio item 4 -->
+			<a href="https://lms-adm.netlify.app" class="portfolio__item">
+				<img src="img/lhq.webp" alt="learnhq" class="portfolio__img">
+				<div id="pdesc" class="descp port-desc">School management system</div>
+			</a>
+
 			<!-- portfolio item 1 -->
 			<a href="https://riple.netlify.app" class="portfolio__item">
 				<img src="img/wa.webp" alt="Ripple" class="portfolio__img">
@@ -334,12 +341,6 @@
 				<div id="pdesc" class="descp port-desc">Restaurant reviews app</div>
 			</a>
 
-			<!-- portfolio item 4 -->
-			<a href="https://devsquest.netlify.app" class="portfolio__item">
-				<img src="img/dq.webp" alt="DevsQuest" class="portfolio__img">
-				<div id="pdesc" class="descp port-desc">DevsQuest forum app</div>
-			</a>
-
 		</div>
 		<div class="project-btns">
 			<div class="butn1"><a href="https://github.com/collins-ruto" class="btnn btnn2">More Projects</a></div>
@@ -352,27 +353,27 @@
 		<a href="mailto:collinsruto48@gmail.com" class="footer__link">collinsruto48@gmail.com</a>
 		<ul class="social-list">
 		    <li class="social-list__item">
-		    	<a class="social-list__link" href="https://www.linkedin.com/in/collins-ruto-12803a1b8/">
+		    	<a class="social-list-link" href="https://www.linkedin.com/in/collins-ruto-12803a1b8/">
 		    		<i class="fab fa-linkedin"></i>
 		    	</a>
 		    </li>
 		    <li class="social-list__item">
-		    	<a class="social-list__link" href="https://github.com/collins-ruto">
+		    	<a class="social-list-link" href="https://github.com/collins-ruto">
 		    		<i class="fab fa-github"></i>
 		    	</a>
 		    </li>
 		    <li class="social-list__item">
-		    	<a class="social-list__link" href="http://twitter.com/ruto_collins_">
+		    	<a class="social-list-link" href="http://twitter.com/ruto_collins_">
 		    		<i class="fab fa-twitter"></i>
 		    	</a>
 		    </li>
 		    <li class="social-list__item">
-		    	<a class="social-list__link" href="http://dribbble.com">
+		    	<a class="social-list-link" href="http://dribbble.com">
 		    		<i class="fab fa-dribbble"></i>
 		    	</a>
 		    </li>
 		    <li class="social-list__item">
-		    	<a class="social-list__link" href="http://stackoverflow.com/users/story/17242991">
+		    	<a class="social-list-link" href="http://stackoverflow.com/users/story/17242991">
 		    		<i class="fab fa-stack-overflow"></i>
 		    	</a>
 		    </li>
