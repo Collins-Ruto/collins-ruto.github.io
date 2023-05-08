@@ -195,13 +195,13 @@ header {
   margin: 0;
   padding: 7em 0 0 0;
   font-family: lora, monospace;
-  line-height: 4em;
+  line-height: 3.5em;
 }
 
 .nav__link {
   color: inherit;
   font-weight: var(--fw-bold);
-  font-size: 2.1em;
+  font-size: 1.5em;
   text-decoration: none;
 }
 
@@ -210,7 +210,7 @@ header {
 }
 
 .nav-toggle {
-  padding: 1em 0.5em;
+  padding: .9em 0.5em;
   background: transparent;
   border: 0;
   cursor: pointer;
@@ -251,7 +251,7 @@ header {
 }
 .nav-open .hamburger::before {
   background-color: var(--clr-accent);
-  transform: rotate(90deg) translateX(-6px);
+  transform: rotate(90deg) translateX(-8px);
 }
 .nav-open .hamburger::after {
   opacity: 0;
@@ -1074,9 +1074,10 @@ input[type="checkbox"]:checked + #checkbox-lable {
 .topbar a {
   float: right;
   color: var(--clr-dark);
-  font-size: 20px;
   text-align: right;
-  padding: 0.4em 0.9em;
+  padding: 0.2em 0.7em;
+  margin-right: .2rem;
+  font-family: lora, monospace;
   font-size: 20px;
   text-decoration: none;
   z-index: 1;
@@ -1085,11 +1086,10 @@ input[type="checkbox"]:checked + #checkbox-lable {
 .topbar a:hover {
   background-color: lightsteelblue;
   color: black;
-  border-radius: 25px;
+  border-radius: 5px;
 }
 .topbar a.active {
-  letter-spacing: -0.1em;
-  border-radius: 25px;
+  border-radius: 5px;
   background-color: #4caf50;
   color: white;
 }
