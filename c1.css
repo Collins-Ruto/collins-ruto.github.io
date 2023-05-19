@@ -17,7 +17,7 @@ body {
 }
 
 .container {
-	position: ;
+	/* position: ; */
 	padding: 1em;
 	box-shadow:0 1rem 3rem rgba(0,0,0,.475) !important; 
 	border-radius: 1em;
@@ -25,16 +25,9 @@ body {
 	z-index: 2;
 }
 
-.row {
-	
-}
-
 @media (max-width: 600px) {
 	body {
 		background: lightseagreen !important
-	}
-	
-	.contact-con {
 	}
 	
 	.contact-car {
