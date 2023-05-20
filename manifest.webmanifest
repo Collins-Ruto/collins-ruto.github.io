@@ -1,0 +1,20 @@
+{
+  "name": "Collins Ruto - full-stack Web Developer | Freelancer",
+  "short_name": "Collins Ruto - full-stack Web Developer | Freelancer",
+  "start_url": "/",
+  "background_color": "#111111",
+  "theme_color": "#ffffff",
+  "display": "standalone",
+  "icons": [
+    {
+      "src": "fav/android-chrome-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "fav/android-chrome-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
