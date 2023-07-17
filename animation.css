@@ -168,7 +168,7 @@
 .to_hide > *{
   opacity: 0;
   transform: scale(.8);
-  transition: all 2s;
+  transition: all 1s;
 }
 
 @media (prefers-reduced-motion) {

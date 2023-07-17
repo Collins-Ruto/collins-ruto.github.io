@@ -860,6 +860,7 @@ input[type="checkbox"]:checked + #checkbox-lable {
 
 .lifestyle-item {
   width: 90%;
+  margin: 0 auto;
   display: grid;
   margin-top: 2rem;
   text-align: left;
@@ -868,9 +869,14 @@ input[type="checkbox"]:checked + #checkbox-lable {
   font-size: 1.5rem;
 }
 
+.life-img {
+  max-width: 30rem;
+  margin-left: 1rem;
+}
+
 .lifestyle__img {
   grid-area: img;
-  width: 90%;
+  width: 100%;
   position: relative;
   z-index: 2;
   float: righ;
